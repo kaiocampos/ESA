@@ -30,14 +30,13 @@ const getContractByHash = async (hash) => {
     console.log(contractAddress)
 }
 
-// contractAddress = 
-const mintToken =  async (contractAddress) => {
+const paiment =  async (wallet, contractAddress, amount) => {
 
      const { hash } = await sdk.token.mint({
         protocol,
-        wallet,
+        wallet: wallet,
         destination: wallet.address,
-        amount: 100,
+        amount: amount,
         token: contractAddress
      })
 
@@ -70,7 +69,15 @@ const transferToken = async (contractAddress, destination) => {
 
 const contractAddress = "0x2e251c2571bbb825ce22e22dded939aa8f229b23"
 // createToken()
-getContractByHash("0xb3c1edac43d2bd2858cf52dac9c529cab0b3788af8c0b6108fe7a20ce2d42733")
+// getContractByHash("0xb3c1edac43d2bd2858cf52dac9c529cab0b3788af8c0b6108fe7a20ce2d42733")
 // mintToken(contractAddress)
 // burnToken(contractAddress)
 // transferToken(contractAddress, "0xB9F97A89a378aaa1A1E6811Eb17807CC60411322")
+
+export {
+    paiment,
+    createToken,
+    getContractByHash,
+    transferToken,
+    burnToken
+}
