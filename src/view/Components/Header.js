@@ -1,14 +1,14 @@
-import '../style/Header.css';
+import '../../style/Header.css';
 
-function Header() {
+function Header({title, link1, link2}) {
     return (
         <header className="Header">
             <h1 className="HeaderTitle">
-                    Educação Solidária Anônima
+                    {title}
                 </h1>
                 <nav className='HeaderNav'>
-                    <a href=''>Quero Ajudar!</a>
-                    <a>Quero Ser Ajudado!</a>
+                    <a href='#'>{link1}</a>
+                    <a>{link2}</a>
                 </nav>
         </header>
     );

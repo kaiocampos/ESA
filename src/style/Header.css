@@ -13,3 +13,21 @@
     text-align: center;
     justify-content: space-evenly;
 }
+
+.iWantToHelp {
+    margin: 0 auto;
+    padding: 0;
+    background-color: burlywood;
+    width: 95vw;
+    height: 70vh;
+}
+
+.iWantToHelpTitle {
+    text-align: center;
+}
+
+.iWantToHelp1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
