@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Educação Solidária Anônima
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Como foi o desenvolvimento ?
 
-### `npm run build`
+Durante nosso plano de desenvolvimento tivemos algumas ideias e divergencias de opiniões, impactou nosso desenvolvimento onde perdemos o foco por falta de habilitade técnica para cumprir a demanda. Pela pressão e falta de habilitade técnica, acabamos por entregar o completo incompleto, porém obtivemos grande aprendizado durante o todo o processo de 12hrs.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O projeto Educação Solidária Anônima possui o objetivo de proporcionar oportunidades educacionais acessíveis, visando a captação de doações.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Na parte técnica optamos por utilizar o Frammework do JavaScript React, implementando o paradgima de componentes funcionais e o design pattern MVC. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Implementamos na controller, as funções que seriam responsaveis pela regra de negócio da nossa implementação. 
 
-### `npm run eject`
+paimentHandler - Seria responsável por realizar o pagamento chamando a função paiment que comunicaria com o SDK da Blockchain.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+createNewToken - Essa função seria responsável por criar o novo token de transações.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+getContract - Essa função seria responsável por gerar o contrato daquela transação em que tornaria uma transação segura.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+discartToken - Essa função seria responsável por excluir um token.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+transferTransaction - Essa função seria responsável por realizar as transações.
