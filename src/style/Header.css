@@ -1,0 +1,15 @@
+.Header {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.HeaderTitle {
+    text-align: center;
+}
+
+.HeaderNav {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
