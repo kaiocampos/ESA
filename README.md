@@ -1,18 +1,10 @@
 # Educação Solidária Anônima
 
-
-
-
-
-
-
+O projeto Educação Solidária Anônima possui o objetivo de proporcionar oportunidades educacionais acessíveis, visando a captação de doações.
 
 # Como foi o desenvolvimento ?
 
 Durante nosso plano de desenvolvimento tivemos algumas ideias e divergencias de opiniões, impactou nosso desenvolvimento onde perdemos o foco por falta de habilitade técnica para cumprir a demanda. Pela pressão e falta de habilitade técnica, acabamos por entregar o completo incompleto, porém obtivemos grande aprendizado durante o todo o processo de 12hrs.
-
-O projeto Educação Solidária Anônima possui o objetivo de proporcionar oportunidades educacionais acessíveis, visando a captação de doações.
-
 Na parte técnica optamos por utilizar o Frammework do JavaScript React, implementando o paradgima de componentes funcionais e o design pattern MVC. 
 
 Implementamos na controller, as funções que seriam responsaveis pela regra de negócio da nossa implementação. 
